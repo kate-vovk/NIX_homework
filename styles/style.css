@@ -1,0 +1,363 @@
+*{
+  text-align: justify;
+}
+h2, h3{
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+}
+p{
+  font-family:'Lato', sans-serif;
+}
+html,body{
+  margin:0;
+}
+
+
+header{
+  overflow: hidden;
+  position:fixed;
+  top: 0;
+  font-family: 'Montserrat', sans-serif;
+  color: #1a1a1a;
+  height: 20%;
+  width:100%;
+  background-color: white;
+  z-index: 5;
+}
+header div{
+  float: left;
+  padding: 20px;
+}
+header div > img{
+  width: 50px;
+  height: 50px;
+}
+header div > span{
+  margin: 0px 0px 0px 10px;
+  color: #36ab9c;
+  font-size: 50px;
+  font-weight: bold;
+}
+header nav{
+  float: right;
+  text-align: center; 
+  font-size: 30px;
+  padding: 20px;
+}
+header nav a{
+  text-decoration: none;
+  color: #2b887a;
+}
+header nav a:hover{
+  background-color: #ecf9f7;
+}
+
+
+main{
+  position: relative;
+  margin-top: 150px;
+  padding: 0px 10px 10px 10px;
+  background-color: #ecf9f7;
+}
+body{  
+  background: linear-gradient(to right top, #36ab9c 55%, #cec8c8 45%);
+  background-size: 100% calc(100% - 100vh + 150px);
+  background-repeat: no-repeat;
+  }
+body:before{
+  content:'';
+  position: fixed;
+  top: 23%;
+  bottom: 0;
+  width: 100%;
+  z-index: -1;
+  background: #f3f0f0;
+  }
+
+
+
+.carousel-wrapper{
+  position: relative;
+  height: 400px;
+  background-color: #c4ede7;
+  overflow: hidden;
+}
+.carousel-item{
+  position:absolute;
+  top: 30px;
+  right: 180px;
+  bottom: 30px;
+  left: 180px;
+  opacity: 0;
+  background-color: #8ab3db;
+  transition: all 0.5s ease-in-out;
+  padding: 10px;
+}
+.carousel-item > div.images{
+  position: absolute;
+  display: inline-block;
+  top: 30px;
+  right: 0;
+  bottom: 0;
+  left: 20%;
+}
+.carousel-item div p{
+  display: inline-block;
+  margin: auto;
+  padding: 0 20px 0 20px;
+}
+div.images p img{
+  width: 250px;
+  height: 250px;
+}
+.arrow{
+  position: absolute;
+  top:45%;
+  bottom: 50%;
+  width:10%;
+  height:20%;
+  background-size: cover; 
+}
+.arrow-next{
+  right: 0;
+  background-image: url('../images/white-right-arrow.png');
+
+}
+.arrow-prev{
+  left: 0; 
+  background-image: url('../images/white-left-arrow.png');
+
+}
+[id^="target-item"]{
+  display:none;
+}
+.item-1{
+  z-index: 2;
+  opacity: 1;
+}
+*:target~.item-1{ 
+opacity:0;
+}
+#target-item-1:target~.item-1, #target-item-2:target~.item-1{
+opacity:1;
+}
+#target-item-3:target~.item-2, #target-item-4:target~.item-2, #target-item-5:target~.item-3, #target-item-6:target~.item-3{
+z-index:3;
+opacity:1;
+}
+
+
+
+.center{
+  margin: auto;
+}
+.table{
+  background-color: #b1e7df;
+}
+.table:hover{
+  background-color: #ecf9f7;
+  width: 100%;
+  margin: auto;
+}
+.table table{
+  text-align: center;
+  border: 3px solid #123b34;
+  background-color: #b1e7df;
+}
+th, td, caption{
+  text-align: center;
+  border: 2px solid #123b34;
+}
+caption:hover{
+  background-color:#3cc3aa;
+}
+tr:hover:nth-child(3n + 1){
+  background-color:#63cfbb;
+}
+tr:hover:nth-child(4n + 2){
+  background-color:#9de1d5;
+}
+tr:hover:nth-child(5n + 3){
+  background-color:#c4ede6;
+}
+.no_borders{
+  border: none;
+}
+
+
+
+.accordion{
+  overflow: hidden;
+  margin: 10px auto;
+  background-color: #9de1d7;
+  padding: 10px;
+}
+
+.accordion section{
+  float: left;
+  background: #333; 
+  margin: 3px;
+  cursor: pointer;
+}
+
+.accordion section:hover{
+  background:#444;
+}
+
+.accordion section div.content{
+  display: none;
+  position: relative;
+  bottom:50px;
+}
+
+.accordion section::after{
+  position: relative;
+  color:#000;
+  
+}
+
+.accordion section:nth-child(1){ background-color: red; }
+.accordion section:nth-child(2){ background-color: orange; }
+.accordion section:nth-child(3){ background-color: yellow; }
+.accordion section:nth-child(4){ background-color: green; }
+.accordion section:nth-child(5){background-color: lightgreen;}
+
+.accordion section:nth-child(1):after{ content:'>'; }
+.accordion section:nth-child(2):after{ content:'>'; }
+.accordion section:nth-child(3):after{ content:'>'; }
+.accordion section:nth-child(4):after{ content:'>'; }
+.accordion section:nth-child(5):after{ content:'>'; }
+
+
+.accordion section:target{
+  padding:10px;
+  width: 200px;
+}
+
+.accordion section:target:hover{
+  background: #FFF;
+}
+
+.accordion section:target h2.tab{
+  width: 100%;
+}
+
+.accordion section:target h2.tab a{
+  padding:0;
+  opacity:0.7;
+}
+
+.accordion section:target div.content{
+  display: block;
+  width: 200px;
+}
+.accordion section h2.tab a{  
+      padding:8px 10px;  
+      display:block;   
+      font-size:16px;   
+      font-weight:normal;  
+      color:white;   
+      text-decoration:none;   
+      background-color:black;
+      opacity:0.4;
+}
+
+.horizontal section{
+  width: 5%;
+  height: 250px;
+  transition:width 0.2s ease-out;
+}
+.horizontal section:after{
+  top:150px;
+  left: 15px;
+}
+
+.horizontal section h2.tab{
+  transform: rotate(270deg);
+  width:240px;
+  position:relative;  
+  left:-100px;   
+  top:5px;
+}
+.horizontal:target{
+  width:100%;
+  height:250px;
+}
+
+
+
+.random_text{
+  background-color: #8adbcf;
+}
+
+
+
+section.form_background:before{
+  content: '';
+  display: block;
+  position: absolute;
+  width: 100%;
+  opacity: 0.5;
+  background-image: url("https://static-cms.hotjar.com/images/testimonial.width-750.jpg");
+  background-size: cover;
+  background-position: center;
+  min-height: 600px;
+  padding: 20px;
+  text-align: center;
+}
+
+form.container{
+  position: relative;
+  max-width: 300px; 
+  background-color: #a6d576;
+  margin: auto;
+  padding: 16px;
+}
+form.container p{
+  font-weight: bold;
+}
+
+form input:not(input[name="button"]){
+  width:90%;
+  border: none;
+  background-color: #f1f1f1;
+}
+
+form input:not(input[name="button"]):focus{
+  background-color: #ddd;
+}
+form input:not(input[name="button"]):invalid{
+  background-color: #e7bfb1;
+  border: 2px red dotted;
+}
+
+input[name="button"]{
+  background-color: #36ab9c;
+  border: none;
+  width: 40%;
+  opacity: 0.9;
+  text-align: center;
+  margin: auto;
+}
+
+
+}
+input[name="button"]:hover{
+  border-radius: 60%;
+  cursor:pointer;
+  height: 60px;
+  width: 60px;
+  opacity: 1;
+  padding: 10px;
+}
+
+footer{
+  background:radial-gradient(#db9e8a, #8adbb3, #8a8adb);
+  min-height: 50px;
+  padding: 150px;
+}
+
+footer h3{
+  max-width: 100px; 
+  margin: auto;
+}
