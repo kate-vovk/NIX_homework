@@ -109,6 +109,8 @@ body:before{
 div.images p img{
   width: 250px;
   height: 250px;
+  box-shadow: 6px 6px 3px #8a8adb, 11px 11px 6px #8a9edb, 15px 15px 10px #8ac7db;
+  opacity: 0.9;
 }
 .arrow{
   position: absolute;
