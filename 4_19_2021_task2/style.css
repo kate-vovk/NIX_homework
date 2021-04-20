@@ -1,0 +1,58 @@
+.invisible_screen{
+	position: absolute;
+	top: 0;
+	right: 0;
+	left: 0;
+	bottom: 0;
+	opacity: 0.5;
+	z-index: 1;
+
+}
+
+
+.wrapper{
+	position: fixed;
+	height: 300px;
+	top: 20px;
+	right: 20px;
+	left: 20px;
+	z-index: 2;
+	vertical-align: middle;
+}
+.blue_wrapper{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background-color: blue;
+	opacity: 0.3;
+	z-index: 3;
+
+}
+.form_wrapper{
+	position: relative;
+	width: 350px;
+	height: 150px;
+	margin: auto;
+	border: 1px solid black;
+	z-index: 4;
+	background-color: white;
+	top: 23%;
+
+}
+
+img{
+	width: 70px;
+	height: 70px;
+	float: left;
+}
+form{
+	display: table;
+}
+form div.row{
+	display: table-row;
+}
+
+form div > *{
+	display: table-cell;
+}
+
