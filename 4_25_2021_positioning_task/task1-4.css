@@ -1,0 +1,162 @@
+h1{
+	text-align: center;
+}
+
+
+.task1{
+	margin: auto auto 10px auto;
+	padding: 20px 70px 20px 15px;
+	border:1px dotted;
+	text-align:justify;
+	background-color: lightblue;
+}
+.task1 img{
+	width: 200px;
+	height: 100px;
+}
+.task1 .left_image{
+	float:left;
+	margin: 0 10px 10px 0;
+
+}
+.task1 .right_image{
+	float: right;
+	margin: 0 0 10px 10px;
+}
+
+
+
+.task2_1{
+	position: relative;
+	margin: auto auto 10px auto;
+	width: 500px;
+	height: 500px;
+	border:1px dotted;
+	background-color: pink;
+}
+.task2_1 .main{
+	position: relative;
+	margin: auto;
+	width: 80%;
+	height: 75%;
+	background-color: lightgreen;
+}
+.task2_1 .rect{
+	position: absolute;
+	width: 80px;
+	height: 80px;
+	margin: 30px;
+	background-color: white;
+
+}
+.task2_1 .rect1{
+	top: 30px;
+	left: 30px;
+}
+.task2_1 .rect2{
+	bottom: 30px;
+	right: 30px;
+}
+
+
+.task2_2{
+	margin: auto auto 10px auto;
+	width: 500px;
+	height: 500px;
+	border:1px dotted;
+	background-color: pink;
+}
+.task2_2 .main{
+	position: relative;
+	margin: auto;
+	width: 80%;
+	height: 80%;
+	border-radius: 100%;
+	background-color: lightgreen;
+}
+.task2_2 .main *{
+	position: absolute;
+	background-color: white;
+
+}
+.task2_2 .eye{
+	width: 80px;
+	height: 80px;
+	margin: 30px;
+	border-radius: 100%;
+}
+.task2_2 .left_eye{
+	top: 30px;
+	left: 30px;
+}
+.task2_2 .right_eye{
+	top: 30px;
+	right: 30px;
+}
+.task2_2 .nose{
+	position: absolute;
+	width: 60px;
+	height: 60px;
+	top: 45%;
+	bottom: 50%;
+	left: 43%;
+	right: 50%;
+}
+.task2_2 .mouth{
+	position: absolute;
+	width: 150px;
+	height: 20px;
+	bottom: 20%;
+	right: 30%;
+}
+
+
+.task3{
+	position: relative;
+	margin: auto auto 10px auto;
+	background-color: purple;
+	width: 50%;
+}
+.task3 ul{
+	position: relative;
+	margin: auto;
+	text-align: center;
+}
+.task3_1 ul li{
+	display: inline-block;
+	list-style: none;
+	margin: 10px;
+}
+.task3_2 ul{
+	height: 600px;
+	padding: 10px;
+}
+.task3_2 ul li{
+	float: left;
+	list-style: none;
+	margin: 10px;
+}
+
+.task4{
+	position: relative;
+	display: table;
+	height: 62px;
+	width: 100%;
+	margin: auto;
+	border:1px dotted;
+	background-color: lightgrey;
+	text-align: center;
+
+}
+
+.task4 .arrow{
+	position: absolute;
+	display: inline-block;
+	line-height: 60px;
+	height: 60px;
+	width: 60px;
+
+	border: 1px solid black;
+	font-size:28px;
+	background-color: pink;
+}
