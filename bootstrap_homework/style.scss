@@ -1,0 +1,45 @@
+@import "bootstrap/scss/bootstrap";
+
+.add_page 
+    {.row div[class*=col]{
+    border: 1px solid darkblue ;
+    }
+}
+
+@include media-breakpoint-only(xs){
+    div.r3{
+        :first-child{
+            display: none;
+        } 
+    }
+}
+@include media-breakpoint-up(xs){
+    .r3{
+        .col-5{
+            background-color: greenyellow;
+        }
+    }
+}
+
+@include media-breakpoint-down(md){
+    .r2 div.r22{
+        display: none;
+    }
+}
+@include media-breakpoint-up(sm){
+    div.r22{
+        background-color: powderblue;
+    }
+}
+
+@include media-breakpoint-up(lg){
+    .r1 .col-4 .row{
+        display: none;
+    }
+    .r1 .col-4::before{
+        content:"ABC";
+    }
+    .r1 .col-4{
+        background-color: salmon;
+    }
+}

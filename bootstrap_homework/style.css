@@ -1,0 +1,92 @@
+*{
+    text-align: center;
+}
+h2, h3{
+    text-align: center;
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+}
+
+nav a img{
+    width: 50px;
+    height: 50px;
+}
+
+.navbar-light .navbar-brand {
+    color: #36ab9c;
+    font-size: 50px;
+}
+.navbar-light .navbar-brand:hover{
+    color: #2a9789;
+}
+.navbar-collapse .navbar-nav .nav-item .nav-link{ 
+    text-align: left;
+}
+.navbar-collapse .nav-item .nav-link{
+    color: #2b887a; 
+}
+.navbar-collapse .nav-item .nav-link:hover{
+    background-color: #ecf9f7;
+    color: #2b887a; 
+}
+.navbar-toggler.custom-toggler{
+    border-color: rgb(54, 171, 156);
+}
+.custom-toggler .navbar-toggler-icon {
+    background-image: url(
+"data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgb(54, 171, 156)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+
+.image-caption{
+    position: relative;
+    top:50px;
+    color:#000000;
+}
+.carousel-control-prev-icon{
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23000' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E") !important;
+}
+.carousel-control-next-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23000' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E") !important;
+}
+
+
+#accordion p{
+    text-align: justify;
+}
+#accordion .btn:before{
+    font-family: "Glyphicons Halflings";
+    content:"\e114";
+    float:right;
+    margin-left:15px;
+}
+#accordion .btn.collapsed:before{
+    font-family: "Glyphicons Halflings";
+    content:'\e080';
+    float:right;
+}
+
+.panel-title{
+    background-color: grey;
+}
+
+h2.panel-title a{
+    text-decoration: none;
+}
+
+
+.page-footer{
+    background:radial-gradient(#8adbb3, #8a8adb);
+}
+#carousel{
+    background-color: #d9eeeb;
+}
+#table{
+    background-color: #bae7e0;
+}
+#accordion{
+    background-color: #a4e2d9;
+}
+#form{
+    background-color: #89d8cc;
+}  
