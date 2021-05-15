@@ -1,9 +1,13 @@
-<!DOCTYPE html>
-<html>
+<!DOCTYPE html> 
+<html> 
     <head>
         <title>Bootstrap homework</title>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <script type="text/javascript" src="/Users/katevovk/NIX_homework/js_homework.js"></script>
+
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
         <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
@@ -12,12 +16,9 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script> 
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
-        <link rel="stylesheet" type="text/css" href="style.css">
-        
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">     
-    
     </head>
     <body>
         <header class="sticky-top page-header p-2">
@@ -40,7 +41,7 @@
                 </div>
             </nav>
             <div class="progress">
-                <div id="myBar" class="progress-bar bg-info progress-bar-animated" role="progressbar" aria-valuemin="0" aria-valuemax="100" style="width: 0;">
+                <div id="myBar" class="progress-bar bg-info progress-bar-animated" role="progressbar" aria-valuemin="0" aria-valuemax="100" >
                     <span class="sr-only"></span>
                 </div>
             </div>
@@ -273,14 +274,15 @@
             </div>
             <div class="footer-copyright text-center">&copy; Kate V. 2021</div>
         </footer>
-        <script>
+        <script scr="js_homework.js">
             window.onscroll = function(){scrollPercentage()};
             function scrollPercentage(){
-                let winScroll = document.body.scrollTop || document.documentElement.scrollTop;
-                let height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
-                let scrolled = (winScroll / height) * 100;
-                document.getElementById("myBar").style.width = scrolled + "%";
-            };
+            let winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+            let height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+            let scrolled = (winScroll / height) * 100;
+            document.getElementById("myBar").style.width = scrolled + "%";
+        };
+
         </script>
         <script>
             $(document).ready(function(){
