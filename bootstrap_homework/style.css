@@ -12,13 +12,14 @@ nav a img{
     height: 50px;
 }
 
-.navbar-light .navbar-brand {
+.navbar .navbar-brand {
     color: #36ab9c;
     font-size: 50px;
 }
-.navbar-light .navbar-brand:hover{
+.navbar .navbar-brand:hover{
     color: #2a9789;
 }
+
 .navbar-collapse .navbar-nav .nav-item .nav-link{ 
     text-align: left;
 }
@@ -81,15 +82,44 @@ h2.panel-title a{
 .page-footer{
     background:radial-gradient(#8adbb3, #8a8adb);
 }
-#carousel{
+
+
+.carousel_container_light{
     background-color: #d9eeeb;
 }
-#table{
+.table_container_light{
     background-color: #bae7e0;
 }
-#accordion{
+.accordion_container_light{
     background-color: #a4e2d9;
 }
-#form{
+.form_container_light{
     background-color: #89d8cc;
 }  
+
+.carousel_container_dark{
+    background-color: #444343;
+    color: white;
+}
+.table_container_dark{
+    background-color: #2a2b2b;
+    color: white;
+}
+.table_container_dark th{
+    color: white;
+}
+.table_container_dark th{
+    color: white;
+}
+.table_container_dark td{
+    color: white;
+}
+.accordion_container_dark{
+    background-color: #303030;
+    color: white;
+}
+.form_container_dark{
+    background-color: #222222;
+    color: white;
+}  
+

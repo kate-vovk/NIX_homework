@@ -1,12 +1,12 @@
 <!DOCTYPE html> 
 <html> 
     <head>
-        <title>Bootstrap homework</title>
+        <title>Bootstrap-JS homework</title>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         
         <link rel="stylesheet" type="text/css" href="style.css">
-        <script type="text/javascript" src="/Users/katevovk/NIX_homework/js_homework.js"></script>
+        <!--<script type="text/javascript" src="js_homework.js"></script> -->
 
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
         <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css">
@@ -26,19 +26,25 @@
                 <a class="navbar-brand" href="#">
                     <img src="images/logo.png" alt="logo" class="d-inline-block align-text-top">Name
                 </a>
+                <div class="custom-control custom-switch">
+                    <input type="checkbox" class="custom-control-input" id="darkMode">
+                    <label for="darkMode" class="custom-control-label" id="darkModeLabel">Dark-Mode off</label>
+                </div>
                 <button class="navbar-toggler custom-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavBar">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="collapsibleNavBar">
                     <ul class="navbar-nav m-2" style="color: aqua;">
                         <li class="nav-item mx-2"><a class="nav-link" href="#additional_page.html" data-toggle="popover">Popover</a></li>
-                        <li class="nav-item mx-2"><a class="nav-link" href="#carousel">Carousel</a></li>
-                        <li class="nav-item mx-2"><a class="nav-link" href="#table">Some table</a></li>
-                        <li class="nav-item mx-2"><a class="nav-link" href="#accordion">Accordion</a></li>
-                        <li class="nav-item mx-2"><a class="nav-link" href="#form">Form</a></li>
-                        <li class="nav-item mx-2"><a class="nav-link" href="#footer">Footer</a></li>
+                        <li class="nav-item mx-2"><a class="nav-link" href="js_additional_page.html" target="_blank">JS additional page</a></li>
+                        <li class="nav-item mx-2"><a class="nav-link scroll-to" href="#carousel">Carousel</a></li>
+                        <li class="nav-item mx-2"><a class="nav-link scroll-to" href="#table">Some table</a></li>
+                        <li class="nav-item mx-2"><a class="nav-link scroll-to" href="#accordion">Accordion</a></li>
+                        <li class="nav-item mx-2"><a class="nav-link scroll-to" href="#form">Form</a></li>
+                        <li class="nav-item mx-2"><a class="nav-link scroll-to" href="#footer">Footer</a></li>
                     </ul>
                 </div>
+                
             </nav>
             <div class="progress">
                 <div id="myBar" class="progress-bar bg-info progress-bar-animated" role="progressbar" aria-valuemin="0" aria-valuemax="100" >
@@ -48,7 +54,7 @@
         </header>
 
         <main>
-            <section class="container-fluid p-2" id="carousel">
+            <section class="carousel_container_light container-fluid p-2" id="carousel">
                 <h2>Gallery</h2>
                 <div id="myCarousel" class="carousel slide" data-ride="carousel">
                     <div class="carousel-inner">
@@ -82,7 +88,7 @@
             </section>
 
 
-            <section id="table" class="container-fluid p-2">
+            <section id="table" class="table_container_light container-fluid p-2">
                 <h2>Comparison Table Between Parrot and Macaw</h2>
                 <table class="table table-hover">
                     <caption>
@@ -133,7 +139,7 @@
                 </table>
             </section>
 
-            <section class="container-fluid p-2" id="accordion">
+            <section class="accordion_container_light container-fluid p-2" id="accordion">
                 <h2>Accordion</h2>
                 <div class="panel-group" >
                     <div class="panel">
@@ -184,33 +190,32 @@
                     </div>                   
                 </div>
             </section>
-
-
-            <section class="container-fluid p-2" id="form">
+            <section class="form_container_light container-fluid p-2" id="form">
                 <h2>Form</h2>
-                <form action="_blank" class="form-horizontal p-1">
+                <form id="myForm" class="form-horizontal p-1" name="form">
+                    <div class="notValidFormError form-group row justify-content-around px-5" hidden>Hello</div>
                     <div class="form-group row justify-content-around px-5">
                         <label style="text-align: left;" for="name" class="control-label col-md-3">Your name</label>
                         <div class="col-md-9">
-                            <input type="text" class="form-control" id="name" placeholder="Your name" required>
+                            <input type="text" class="form-control" id="name" name="name" placeholder="Your name" required>
                         </div>
                     </div>
                     <div class="form-group row justify-content-around px-5">
                         <label style="text-align: left;" for="email" class="control-label col-md-3">Email address</label>
                         <div class="col-md-9">
-                            <input type="email" class="form-control" id="email" placeholder="example@domain.tld" required> 
+                            <input type="email" class="form-control" id="email" name="email" placeholder="example@domain.tld" required> 
                         </div>
                     </div>    
                     <div class="form-group row justify-content-around px-5">
                         <label style="text-align: left;" for="phone" class="control-label col-md-3">Phone number</label>
                         <div class="col-md-9">
-                            <input type="password" class="form-control" id="phone" pattern="^\d{10}$" required>
+                            <input type="tel" class="form-control" id="phone" name="phone" pattern="^\d{10}$" required>
                         </div>
                     </div>
                     <div class="form-group row justify-content-around px-5">
                         <label style="text-align: left;" for="date" class="control-label col-md-3">Date of Birth</label>
                         <div class="col-md-9">
-                            <input type="date" class="form-control" id="date">
+                            <input type="date" class="form-control" id="date" name="date">
                         </div>
                     </div>
                     <div class="form-group row pl-4 ml-4">
@@ -220,33 +225,39 @@
                             </div>        
                     </div>
                     <div class="form-group justify-content-center">
-                        <button class="btn btn-success" type="button" data-toggle="modal" data-target="#myModal">Send</button>
-                        <button class="btn btn-danger" type="reset">Clear</button>                        
+                        <button class="validateBtn btn btn-success" type="button" >Send</button>
+                        <button class="triggerModal btn btn-success" type="button" data-toggle="modal" data-target="#myModal" hidden>Send</button>
+                        <button class="btn btn-danger" type="reset">Clear</button>      
+                        <button type="submit" value="Submit" id="submitForm" class="btn btn-default" hidden>
+                        </button>
+                  
+                    </div>
+                    <div class="modal fade" id="myModal">
+                        <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="col justify-self-center">Modal window</h5>
+                                    <button type="button" class="close" data-dismiss="modal">
+                                        <span>&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    <p>Would you like to save your details?</p>
+                                </div>
+                                <div class="modal-footer justify-content-center">
+                                    <button type="submit" class="submitBtn btn btn-outline-success" data-dismiss="modal">Yes</button>
+                                    <button type="button" class="btn btn-outline-danger" data-dismiss="modal">No</button>
+
+                                </div>
+                            </div>
+        
+                        </div>
                     </div>
                </form>
             </section>
-            <section class="modal fade" id="myModal">
-                <div class="modal-dialog modal-dialog-centered">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h5 class="col justify-self-center">Modal window</h5>
-                            <button type="button" class="close" data-dismiss="modal">
-                                <span>&times;</span>
-                            </button>
-                        </div>
-                        <div class="modal-body">
-                            <p>Would you like to save your details?</p>
-                        </div>
-                        <div class="modal-footer justify-content-center">
-                            <button type="submit" class="btn btn-outline-success" data-dismiss="modal">Yes</button>
-                            <button type="button" class="btn btn-outline-danger" data-dismiss="modal">No</button>
-                        </div>
-                    </div>
-
-                </div>
-            </section>
+            
         </main>
-        <footer class="page-footer p-4">
+        <footer class="page-footer p-4" id="footer">
             <div class="container">
                 <ol class="list-unstyled list-inline row justify-content-center">
                     <li class="list-inline-item">
@@ -272,17 +283,10 @@
                     </li>
                 </ol>
             </div>
-            <div class="footer-copyright text-center">&copy; Kate V. 2021</div>
+            <div class="footer-copyright">&copy; Kate V. 2021</div>
+            <div class="browser-info" style="font-size: 10px;"></div>
         </footer>
-        <script scr="js_homework.js">
-            window.onscroll = function(){scrollPercentage()};
-            function scrollPercentage(){
-            let winScroll = document.body.scrollTop || document.documentElement.scrollTop;
-            let height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
-            let scrolled = (winScroll / height) * 100;
-            document.getElementById("myBar").style.width = scrolled + "%";
-        };
-
+        <script src="js_homework.js">
         </script>
         <script>
             $(document).ready(function(){
@@ -290,7 +294,7 @@
                     placement:'bottom',
                     html:true,
                     title:'Popover <a href="#" class="close" data-dismiss="alert">&times;</a>',
-                    content:'<a href="additional_page.html" target="_blank">Some additional page</a>'
+                    content:'<a href="bootstrap_additional_page.html" target="_blank">Bootstrap additional page</a>'
                 });
                 $(document).on("click", ".popover .close" , function(){
                     $(this).parents(".popover").popover('hide');
