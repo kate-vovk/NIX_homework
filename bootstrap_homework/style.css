@@ -12,30 +12,35 @@ nav a img{
     height: 50px;
 }
 
-.navbar .navbar-brand {
-    color: #36ab9c;
-    font-size: 50px;
+.navbar a.navbar-brand {
+    color: #36ab9c;     
+    font-size: 40px;
 }
-.navbar .navbar-brand:hover{
+.navbar a.navbar-brand:hover{
     color: #2a9789;
 }
 
 .navbar-collapse .navbar-nav .nav-item .nav-link{ 
     text-align: left;
 }
-.navbar-collapse .nav-item .nav-link{
+.navbar-collapse li.nav-item .nav-link{
     color: #2b887a; 
 }
-.navbar-collapse .nav-item .nav-link:hover{
+.navbar-collapse li.nav-item .nav-link:hover{
     background-color: #ecf9f7;
     color: #2b887a; 
 }
-.navbar-toggler.custom-toggler{
+button.navbar-toggler.custom-toggler{
     border-color: rgb(54, 171, 156);
 }
-.custom-toggler .navbar-toggler-icon {
+button.custom-toggler .navbar-toggler-icon {
     background-image: url(
 "data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgb(54, 171, 156)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+#darkModeLabel{
+    color: #2a9789; 
+
 }
 
 #myBar{
@@ -78,11 +83,9 @@ h2.panel-title a{
     text-decoration: none;
 }
 
-
 .page-footer{
     background:radial-gradient(#8adbb3, #8a8adb);
 }
-
 
 .carousel_container_light{
     background-color: #d9eeeb;
@@ -123,3 +126,8 @@ h2.panel-title a{
     color: white;
 }  
 
+
+div.browser-info{
+    font-size: 10px;
+    margin-left: 5px;
+}
